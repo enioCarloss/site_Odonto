@@ -1,9 +1,11 @@
+import { NavHeader } from "../NavHeader"
+
 export const HeaderPage = () => {
 
-    return(
+    return (
         <header>
             <div>
-             
+                <NavHeader />
             </div>
         </header>
     )
