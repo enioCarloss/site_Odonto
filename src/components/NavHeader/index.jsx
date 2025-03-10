@@ -1,5 +1,6 @@
-import { Link, Navigate, useNavigate } from "react-router-dom"
-
+import { Link, useNavigate } from "react-router-dom"
+import imgLogo from "../../assets/logodentista.svg"
+import styles from "./index.module.scss"
 export const NavHeader = () => {
     const navigate = useNavigate()
     const schedulingButton = () => {
@@ -8,7 +9,10 @@ export const NavHeader = () => {
     }
     return (
         <nav>
-            <ul>
+            <ul className={styles.listMenu_navBox}>
+            <div>
+                <img src={imgLogo} />
+            </div>
                 <li>
                     <Link to="/">Início</Link>
                 </li>

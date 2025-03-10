@@ -1,0 +1,45 @@
+
+@media(min-width:440px){
+
+.div_containerForm{
+width: 61.875rem;
+height: 49.375rem;    
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1.125rem;
+border-radius: 0.625rem;
+background-color: var(--colorPrimary-01);
+color: var(--colorWhite-default);
+input, select{
+    display: flex;
+    flex-direction: column;
+    width: 37.25rem;
+    height: 4.625rem;
+    padding: 0.9375rem;
+    border-radius: 6.25rem;
+    margin: 1.5625rem;
+    
+}
+h2{
+    margin-top: 0.625rem;
+    font-size: 4rem;
+}
+button{
+width: 18.125rem;
+height: 5rem;
+border-radius: 3.125rem;
+color: var(--colorWhite-default);
+background-color: var(--colorPrimary-02);
+position: relative;
+left: 25%;
+font-size: 2rem;
+height: 300;
+
+}
+
+    
+}
+
+}

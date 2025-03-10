@@ -1,9 +1,9 @@
 import { NavHeader } from "../NavHeader"
-
+import styles from "./index.module.scss"
 export const HeaderPage = () => {
 
     return (
-        <header>
+        <header className={styles.header_Container}>
             <div>
                 <NavHeader />
             </div>
