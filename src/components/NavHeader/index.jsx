@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, Navigate, useNavigate } from "react-router-dom"
 
 export const NavHeader = () => {
+    const navigate = useNavigate()
+    const schedulingButton = () => {
+        navigate("/scheduling")
+        console.log("olá")
+    }
     return (
         <nav>
             <ul>
@@ -20,7 +25,7 @@ export const NavHeader = () => {
                     <Link to="/location">Localização</Link>
                 </li>
                 <div>
-                    <button>Marcar Consulta</button>
+                    <button onClick={schedulingButton}>Marcar Consulta</button>
                 </div>
             </ul>
         </nav>

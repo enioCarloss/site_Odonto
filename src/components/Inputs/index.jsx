@@ -1,11 +1,11 @@
 import { forwardRef } from "react";
 
-export const Inputs = forwardRef(({ label, ...rest }) => {
+export const Inputs = forwardRef(({ label, ...rest }, ref) => {
 
     return (
         <div>
             <label>{label}</label>
-            <input {...rest} />
+            <input {...rest} ref={ref} />
         </div>
     );
 })

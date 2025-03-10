@@ -4,6 +4,7 @@ import { AboutPage } from "../pages/AboutPage"
 import { ReviewsPage } from "../pages/ReviewsPage"
 import { TreatmentsPage } from "../pages/TreatmentsPage"
 import { LocationPage } from "../pages/LocationPage"
+import { SchedulingPage } from "../pages/SchedulingPage"
 
 export const RoutesMain = () => {
     return (
@@ -13,6 +14,7 @@ export const RoutesMain = () => {
             <Route path="reviews" element={<ReviewsPage />} />
             <Route path="/treatments" element={<TreatmentsPage />} />
             <Route path="/location" element={<LocationPage />} />
+            <Route path="/scheduling" element={<SchedulingPage />} />
         </Routes>
     )
 }
