@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import imgLogo from "../../assets/logodentista.svg"
 import styles from "./index.module.scss"
+import  navLinks  from "../Mockdata/data"
 export const NavHeader = () => {
     const navigate = useNavigate()
     const schedulingButton = () => {
@@ -13,21 +14,12 @@ export const NavHeader = () => {
             <div>
                 <img src={imgLogo} />
             </div>
-                <li>
-                    <Link to="/">Início</Link>
+
+            {navLinks.map((link) => (
+                <li key={link.id}>
+                    <Link to={link.path}>{link.label}</Link>
                 </li>
-                <li>
-                    <Link to="/about">Sobre</Link>
-                </li>
-                <li>
-                    <Link to="reviews">Avaliações</Link>
-                </li>
-                <li>
-                    <Link to="/treatments">Tratamentos</Link>
-                </li>
-                <li>
-                    <Link to="/location">Localização</Link>
-                </li>
+            ))}
                 <div>
                     <button onClick={schedulingButton}>Marcar Consulta</button>
                 </div>
