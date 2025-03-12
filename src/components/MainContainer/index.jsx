@@ -1,6 +1,7 @@
+
 export const MainContainer = ({ children }) => {
     return (
-        <main>
+        <main className="main_Container">
             {children}
         </main>
     )

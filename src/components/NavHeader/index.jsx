@@ -13,10 +13,7 @@ export const NavHeader = () => {
     return (
         <nav>
             <ul className={styles.listMenu_navBox}>
-                <div>
-                    <img src={imgLogo} alt="Logo" />
-                </div>
-
+             
                 {navLinks.map((link) => (
                     <li key={link.id}>
                         <Link to={link.path}>{link.label}</Link>
