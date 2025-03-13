@@ -4,10 +4,13 @@ import { Link, useLocation } from 'react-router-dom';
 import navLinks from '../Mockdata/data';
 import styles from './index.module.scss';
 
-const ResponsiveMenu = ({ open, onClose }) => {
+const ResponsiveMenu = ({ open, setOpen }) => {
   const location = useLocation(); 
   const activeRoute = location.pathname; 
 
+  const handleClose = () => {
+    setOpen(false); // Fecha o menu ao clicar em um link
+  };
   return (
     <AnimatePresence mode="wait">
       {open && (
@@ -27,7 +30,7 @@ const ResponsiveMenu = ({ open, onClose }) => {
                   <Link 
                     to={link.path} 
                     className={activeRoute === link.path ? styles.activeLink : undefined}
-                   onClick={onClose}
+                   onClick={handleClose} // Fecha o menu ao clicar
                   >
                     {link.label}
                   </Link>

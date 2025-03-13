@@ -20,7 +20,7 @@ export const HeaderPage = () => {
                 </div>
                 <NavHeader />
             </div>
-            <ResponsiveMenu open={open} onClose={() => setMenuOpen(false)} />
+            <ResponsiveMenu open={open} setOpen={setOpen} />
         </header>
     )
 }
