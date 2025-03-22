@@ -18,7 +18,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
           key={open ? "menu-open" : "menu-closed"}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100  }}
+          exit={{ opacity: 0, x: 100  }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
           className={styles.responsiveMenu}
           aria-hidden={!open}

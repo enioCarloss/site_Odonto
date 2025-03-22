@@ -25,7 +25,7 @@ export const HeaderPage = () => {
                 </div>
                 <NavHeader  />
             </div>
-            {open && <ResponsiveMenu open={open} setOpen={setOpen} />}
+             <ResponsiveMenu open={open} setOpen={setOpen} />
 
         </header>
     )
