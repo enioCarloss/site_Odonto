@@ -1,0 +1,29 @@
+@media(min-width:860px) {
+
+    .odonto_maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        margin: 1.875rem;
+        border-radius: 0.625rem;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width:859px) {
+
+    .odonto_maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        margin: 1.875rem;
+        border-radius: 0.625rem;
+        overflow: hidden;
+    }
+
+}

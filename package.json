@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
     "framer-motion": "^12.5.0",
     "hamburger-react": "^2.5.2",
     "react": "^19.0.0",

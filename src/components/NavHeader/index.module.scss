@@ -1,17 +1,14 @@
+@media(min-width:860px){
+    .open_navMenu{
+        display: flex;
+   
+    }
+ 
+}
+
 @media(max-width:859px) {
     .close_navMenu {
         display: none;
 
     }
-}
-
-@media(min-width:859px) {
-    .open_navMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-    }
-
 }

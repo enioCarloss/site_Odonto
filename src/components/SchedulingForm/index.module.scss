@@ -23,7 +23,7 @@ input, select{
 }
 h2{
     margin-top: 0.625rem;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 button{
 width: 18.125rem;
@@ -42,3 +42,32 @@ height: 300;
 }
 
 }
+
+@media(max-width:859px){
+
+    .div_containerForm{
+        width: 85%;
+        height: 15.4375rem;
+        margin: 0 auto;
+        height: 41.875rem;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        border-radius: 0.625rem;
+        background-color: var(--colorPrimary-01);
+        color: var(--colorWhite-default);
+        text-align: center;
+        h2{
+            width: 100%;
+            font-size: 1.5rem;
+    
+        }
+       
+        }
+        
+
+}
+
+

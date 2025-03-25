@@ -10,7 +10,7 @@ export const NavHeader = ({ open }) => {
     };
 
     return (
-        <>
+        
             <nav className={`${open ? styles.open_navMenu : styles.close_navMenu}`}>
                 <ul className={styles.listMenu_navBox}>
                     {navLinks.map((link) => (
@@ -24,7 +24,6 @@ export const NavHeader = ({ open }) => {
                 </ul>
 
             </nav>
-    
-        </>
+      
     );
 };
