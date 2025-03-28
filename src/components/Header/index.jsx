@@ -3,7 +3,13 @@ import styles from "./index.module.scss"
 import imgLogo from "../../assets/logodentista.svg"
 import { useState } from "react"
 import Hamburger from "hamburger-react"
+import ResponsiveMenu from "../NavHeader/ResponsiveMenu"
+import { Link, useNavigate, useLocation } from "react-router-dom";
+
 export const HeaderPage = () => {
+     const location = useLocation(); 
+      const activeRoute = location.pathname; 
+    
     const [open, setOpen] = useState(false);
 
     return (
@@ -17,8 +23,9 @@ export const HeaderPage = () => {
                         <Hamburger toggled={open} toggle={setOpen} />
                     </button>
                 </div>
-                <NavHeader open={open} />
+                <NavHeader  />
             </div>
+             <ResponsiveMenu open={open} setOpen={setOpen} />
 
         </header>
     )
