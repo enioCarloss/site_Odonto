@@ -13,7 +13,7 @@ export const NavHeader = () => {
     };
 
     return (
-<<<<<<< HEAD
+        <>
         
             <nav className={`${open ? styles.open_navMenu : styles.close_navMenu}`}>
                 <ul className={styles.listMenu_navBox}>
@@ -29,23 +29,10 @@ export const NavHeader = () => {
 
             </nav>
       
-=======
-        <>
-        <nav>
-            <ul className={styles.listMenu_navBox}>
-                {navLinks.map((link) => (
-                    <li key={link.id}>
-                        <Link to={link.path}>{link.label}</Link>
-                    </li>
-                ))}
-                <div>
-                    <button onClick={schedulingButton}>Marcar Consulta</button>
-                </div>
-            </ul>
-            
-        </nav>
+       
+       
          
         </>
->>>>>>> d054994c8972e5f1162320e1975f3f9c4e64db2b
+
     );
 };
